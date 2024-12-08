@@ -1,0 +1,146 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, 'Playfair Display', Playfair, Arial, sans-serif;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  justify-content: center; /* Horizontally center the logo */
+  align-items: center; /* Vertically center the logo */
+  height: 20vh; /* Adjust height to give enough space around the logo */
+  padding: 20px; /* Add some padding around the logo */
+  margin-top: 30px; /* Add space above the logo */
+}
+
+/* Logo image styling */
+.logo img {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px; /* Limit the height of the logo */
+  margin: 0 20px; /* Space around the logo */
+}
+
+/* Optional: Hover effect for the logo */
+.logo a:hover img {
+  transform: scale(1.1); /* Slightly enlarge the logo when hovered */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+header {
+  position: sticky;
+  top: 0; /* Sticks to the top of the viewport */
+  background-color: #f5f5f5; /* Background color for the header */
+  z-index: 1000; /* Ensure it stays above other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for separation */
+  background: linear-gradient(to bottom, white, black); /* Vertical gradient */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0; /* Add spacing around the logo */
+}
+
+.logo img {
+  max-width: 200px; /* Adjust the size of the logo */
+  height: auto;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to bottom, #ffffff, #333333);
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Main Section */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.social-section {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+.social-section img {
+  width: 450px;
+  height: auto;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+}
+
+.social-section img:hover {
+  transform: scale(1.1);
+}
+
+.social-section a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Google Maps Section */
+#location {
+  text-align: center;
+  margin-top: 20px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  border: none;
+  margin: 20px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .social-icons img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
